@@ -21,11 +21,16 @@ gem 'net-smtp', require: false
 gem 'net-imap', require: false
 gem 'net-pop', require: false
 gem 'devise'
+gem 'pry-rails'
+gem 'pry-byebug'
+gem 'pry-nav'
 
 group :development, :test do
   gem 'sqlite3', '1.4.1'
   gem 'pg', '1.1.4'
   gem 'byebug',  '11.0.1', platforms: [:mri, :mingw, :x64_mingw]
+  gem 'debase', '0.2.5.beta2'
+  gem 'ruby-debug-ide', '~> 0.7.2'
 end
 
 group :development do
@@ -33,6 +38,8 @@ group :development do
   gem 'listen',                '3.1.5'
   gem 'spring',                '2.1.0'
   gem 'spring-watcher-listen', '2.0.1'
+  gem 'debase', '0.2.5.beta2'
+  gem 'ruby-debug-ide', '~> 0.7.2'
 end
 
 group :test do

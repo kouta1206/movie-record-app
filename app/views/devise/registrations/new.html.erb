@@ -1,0 +1,48 @@
+    <div class="container">
+        <div class="sign-up-wrapper">
+            <div class="card" style="width: 30rem;">
+                <div class="card-body text-center">
+                    <h2 class="h3 fw-bold mt-2">新規会員登録</h2>
+                    <div class="card-text">
+                        <%= form_with scope: resource, as: resource_name, url: registration_path(resource_name), local: true do |f| %>
+
+                        <div class="mb-4">
+                            <div class="form-outline">
+                                <%= f.label :name, "ユーザー名"  %>
+                                <%= f.text_field :name, autofocus: true, placeholder: "ユーザー名を入力ください",class: "form-control" %>
+                            </div>
+                            <div class="text-start">
+                            </div>
+                        </div>
+                        <div class="mb-4">
+                            <div class="form-outline">
+                                <%= f.label :email, "メールアドレス" %>
+                                <%= f.email_field :email, autofocus: true, placeholder: "メールアドレス", class: "form-control" %>
+                            </div>
+                            <div class="text-start">
+                            </div>
+                        </div>
+                        <div class="mb-4">
+                            <div class="form-outline">
+                                <%= f.label :password, "" %>
+                                <%= f.password_field :password, autocomplete: "off", placeholder: "パスワード", class: "form-control" %>
+                            </div>
+                            <div class="text-start text-danger">
+                            </div>
+                        </div>
+                        <div class="mb-4">
+                            <div class="form-outline">
+                                <%= f.password_field :password_confirmation, autocomplete: "off", placeholder: "パスワードの確認", class: "form-control" %>
+                            </div>
+                            <div class="text-start">
+                            </div>
+                        </div>
+                        <%= f.submit "登録する", class: "btn btn-primary w-100" %>
+                        <div class="text-end">
+                        </div>
+                    </div>
+                    <% end %>
+                </div>
+            </div>
+        </div>
+    </div>
