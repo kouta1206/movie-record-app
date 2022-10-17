@@ -24,6 +24,8 @@ gem 'devise'
 gem 'pry-rails'
 gem 'pry-byebug'
 gem 'pry-nav'
+gem 'devise-i18n'
+
 
 group :development, :test do
   gem 'sqlite3', '1.4.1'

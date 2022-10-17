@@ -112,6 +112,8 @@ GEM
       railties (>= 4.1.0)
       responders
       warden (~> 1.2.3)
+    devise-i18n (1.10.2)
+      devise (>= 4.8.0)
     erubi (1.11.0)
     execjs (2.8.1)
     faker (2.1.2)
@@ -320,6 +322,7 @@ DEPENDENCIES
   capybara (= 3.28.0)
   debase (= 0.2.5.beta2)
   devise
+  devise-i18n
   faker (= 2.1.2)
   guard (= 2.16.2)
   guard-minitest (= 2.4.6)

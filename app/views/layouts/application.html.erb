@@ -1,16 +1,21 @@
 <!DOCTYPE html>
 <html>
-  <head>
+    <head>
     <title>Movie-Record</title>
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
-
     <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
     <%= stylesheet_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
 
-  <body>
-    <%= yield %>
-  </body>
+    <body>
+        <% if flash[:alert] %>
+            <%= alert %>
+        <% end %>
+        <% if flash[:notice] %>
+            <%= notice %>
+        <% end %>
+        <%= yield %>
+    </body>
 </html>
