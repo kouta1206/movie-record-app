@@ -33,6 +33,8 @@ group :development, :test do
   gem 'byebug',  '11.0.1', platforms: [:mri, :mingw, :x64_mingw]
   gem 'debase', '0.2.5.beta2'
   gem 'ruby-debug-ide', '~> 0.7.2'
+  gem 'rspec-rails', '~> 3.8'
+  gem 'factory_bot_rails', '~> 5.0'
 end
 
 group :development do

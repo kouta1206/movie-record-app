@@ -11,7 +11,7 @@
                                 <%= f.label :name, "ユーザー名"  %>
                                 <%= f.text_field :name, autofocus: true, placeholder: "ユーザー名を入力ください",class: "form-control" %>
                             </div>
-                            <div class="text-danger bg-danger text-left">
+                            <div class="text-danger  text-left">
                                 <% if @user.errors.include?(:name) %>
                                     <%= @user.errors.full_messages_for(:name).first %>
                                 <% end %>
@@ -23,7 +23,7 @@
                                 <%= f.label :email, "メールアドレス" %>
                                 <%= f.email_field :email, autofocus: true, placeholder: "メールアドレス", class: "form-control" %>
                             </div>
-                            <div class="text-danger bg-danger text-left">
+                            <div class="text-danger  text-left">
                                 <% if @user.errors.include?(:email) %>
                                     <%= @user.errors.full_messages_for(:email).first %>
                                 <% end %>
@@ -34,7 +34,7 @@
                                 <%= f.label :password, "パスワード" %>
                                 <%= f.password_field :password, autocomplete: "off", placeholder: "パスワード", class: "form-control" %>
                             </div>
-                            <div class="text-danger bg-danger text-left">
+                            <div class="text-danger  text-left">
                                 <% if @user.errors.include?(:password)  %>
                                     <%= @user.errors.full_messages_for(:password).first %>
                                 <% end %>
@@ -45,7 +45,7 @@
                             <%= f.label :password_confirmation, "パスワード再確認" %>
                                 <%= f.password_field :password_confirmation, autocomplete: "off", placeholder: "パスワードの確認", class: "form-control" %>
                             </div>
-                            <div class="text-left text-danger bg-danger">
+                            <div class="text-danger  text-left">
                                 <% if @user.errors.include?(:password_confirmation) %>
                                     <%= @user.errors.full_messages_for(:password_confirmation).first %>
                                 <% end %>
